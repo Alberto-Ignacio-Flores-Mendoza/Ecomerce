@@ -20,7 +20,7 @@ const app = express();
 
 const server = http.createServer(app);
 const io = new Server(server, {
-    cors: 'http://localhost:5173',
+    cors: '*',
     //cors: 'http://localhost:5173',
     methods: ['GET','POST','PATCH', 'DELETE']
 })
